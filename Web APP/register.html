@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
+<title>注册</title>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+<script src="jquery-3.5.1.min.js"></script>
+<script src="register.js"></script>
+<style>
+	
+	body {
+		background-image: linear-gradient(to right,pink,lightblue);
+}
+</style>
+</head>
+
+<body>
+<div class="col-sm-12 col-lg-12 col-md-12">
+<form action="mailto:ivan@qq.com?subject=注册信息" method="post" name="myForm" id="Myform" onsubmit="return registerfun();">
+	<div class="tab-content">
+		<div id="std" class="container tab-pane active">
+		<ul class="nav row">
+			<li class="nav-item col-sm-12 col-lg-12 col-md-12">
+			<a class="nav-link">
+			<div class="card">
+				<img class="card-img-top" src="images/OSU.png" alt="Card image">
+				<div class="card-body">
+					<div class="stayincenter">
+					<p class="pcolor"><span><strong style="font-size: 25px">Welcome to us!</strong></span></p>
+					<p><strong style="font-size: 25px">账户注册</strong></p>
+					<label for="Myname" style="font-size: 10px">*用户名</label>
+					<input type="text" name="myName" id="Myname"><br>
+					<span style="font-size: 10px">*密码</span>
+					<input type="password" name="myPassword1" id="Mypassword1" class="text"><br>
+					<span style="font-size: 10px">*确认密码</span>
+					<input type="password" name="myPassword2" id="Mypassword2" class="text"><br>
+					<span style="font-size: 10px">*Email</span>
+					<input type="email" name="myEmail" id="Myemail" class="text">
+					<br><span style="">请确保邮箱有效，我们将会发送激活链接到这个地址</span>
+					<p><strong style="font-size: 25px">选填</strong></p>
+					<span style="font-size: 10px">性别</span>
+					<input type="radio" name="Mysex" value="M">男
+					<input type="radio" name="Mysex" value="F">女
+					<input type="radio" name="Mysex" value="N">保密<br>
+					<span style="font-size: 10px">生日</span>
+					<input type="date" name="myBirthday" id="Mybirthday" class="text"><br>
+					<label for="Mydevice" style="font-size: 10px">设备</label>
+					<input type="text" name="myDevice" id="Mydevice" class="text"><br>
+					<label for="Mycontact" style="font-size: 10px">联系方式</label>
+					<input type="text" name="myContact" id="Mycontact" class="text"><br>
+					<label for="Myarea" style="font-size: 10px">所在地区</label>
+					<input type="text" name="myArea" id="Myarea" class="text"><br>
+					<input type="submit" class="button" value="确认">
+					<a href="beatmapservice.html">Go Back?</a>
+					<a href="login.html">Login?</a>
+					<div class="bg-dark text-center text-white">Copyright@BeatmapService</div>
+					</div>
+				</div>
+			</div>
+			</a>
+			</li>
+		</ul>
+		</div>
+	</div>
+	
+		
+	</form>
+	</div>
+</body>
+</html>

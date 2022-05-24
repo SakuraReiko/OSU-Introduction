@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
+<title>谱面</title>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+<script src="jquery-3.5.1.min.js"></script>
+</head>
+
+<body>
+<div class="tab-content">
+	<div class="container tab-pane active">
+		<ul class="nav row">
+			<li class="nav-item col-sm-12 col-lg-12 col-md-12">
+			<a class="nav-link" href="#">
+			<div class="card">
+				<img class="card-img-top" src="images/detail1.png" alt="Card image">
+				<div class="card-body">
+					<h4 class="card-title text-dark">Awakening</h4>
+					<p class="card-text text-black-50">Artist: Sunless Rise</p>
+					<p class="card-text text-black-50">Creator: Kyshiro</p>
+					<a href="beatmapservice.html">Go Back?</a>
+					<img src="images/detail2.png" width="100%" height="100%" alt="">
+					<div class="stayincenter">
+					<p class="card-text text-black-50">MaxCombo: 3453</p>
+					<p class="card-text text-black-50">PP: 702.90</p>
+					<p class="card-text text-black-50">BPM: 240.00</p>
+					<p class="card-text text-black-50">Objects: 1675/646/0</p>
+					<img src="images/detail3.png" width="100%" height="100%" alt="">
+					<p class="card-text text-dark">Aim</p>
+					<img src="images/detail4.png" width="100%" height="100%" alt="">
+					<p class="card-text text-dark">Speed</p>
+					<img id="myCartoon" src="images/music.png" alt="">
+					<script>
+					//图片动画封装
+					function SearchC(opts) {
+						for(var i in SearchC.DEFAULTS) {
+						  if (opts[i] === undefined) {
+							opts[i] = SearchC.DEFAULTS[i];
+						  }
+						}
+						this.opts = opts;
+						this.timer = null;
+						this.elem = document.getElementById(opts.elemId);
+						this.startC();
+					}
+					SearchC.prototype.startC = function () {
+						this.stopC();
+						this.timer = setInterval(() => {
+						  var startIndex = this.opts.startIndex;
+						  if (startIndex == 360) {
+							this.opts.startIndex = 0;
+						  }
+						  this.elem.style.transform = "rotate("+ (startIndex) +"deg)";
+						  this.opts.startIndex += 5;
+						}, this.opts.delay);
+						setTimeout(() => {
+						  this.stopC();
+						}, this.opts.duration);
+					}
+					SearchC.prototype.stopC = function() {
+						if (this.timer != null) {
+						  clearInterval(this.timer);
+						}
+					}
+					SearchC.DEFAULTS = {
+						duration : 60000,
+						delay : 200,
+						direction : true,
+						startIndex : 0,
+						endIndex : 360
+					}
+					new SearchC({
+					  elemId : "myCartoon",
+					  delay : 20,
+					});
+					</script>
+					<audio src="music/song.mp3" alt="" controls></audio>
+					<div class="bg-dark text-center text-white">Copyright@BeatmapService</div>
+					</div>
+				</div>
+			</div>
+			</a>
+			</li>
+		</ul>
+	</div>
+</div>
+</body>
+</html>
