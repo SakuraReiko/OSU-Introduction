@@ -1,0 +1,98 @@
+@charset "utf-8";
+*{	padding: 0;
+	margin: 0;
+}
+
+html{
+	height: 100%;
+}
+
+body{
+	height: 100%;
+}
+
+.whole{
+	height: 100%;
+	/*向右的渐变颜色*/
+	background-image: linear-gradient(to right,white,lightblue);
+}
+
+.outside{
+	width: 1000px;
+	height: 680px;
+	background-image: url("../图片/登录页图片/登录看板娘.png");
+	position: relative;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	border: 2px solid #B4B4B4;
+	border-radius: 50px;
+	padding: 0 20px;
+}
+
+.inside{
+	width: 300px;
+	height: 350px;
+	position: relative;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	padding: 0 20px;
+}
+	
+.inside .title{
+	font-size: 35px;
+	color: palevioletred;
+	text-align: center;
+	letter-spacing: .05em;
+	line-height: 80px;
+}
+
+.inside .text{
+	
+}
+
+.inside .text .username{
+	display: block;
+	width: 100%;
+	height: 25px;
+	margin-bottom: 20px;
+	padding: 10px 0;
+	border: 2px solid #B4B4B4;
+	border-radius: 20px;
+	font-size: 20px;
+}
+
+.inside .text .password{
+	display: block;
+	width: 100%;
+	height: 25px;
+	margin-bottom: 20px;
+	padding: 10px 0;
+	border: 2px solid #B4B4B4;
+	border-radius: 20px;
+	font-size: 20px;
+}
+
+.inside .button{
+	text-align: center;
+	letter-spacing: .05em;
+	margin-bottom: 10px;
+	background-image: linear-gradient(to right,#d299c2,#fef9d7);
+	width: 100%;
+	padding: 10px 0;
+	height: 40px;
+	border: 2px solid #B4B4B4;
+	border-radius: 30px;
+	margin-top: 20px;
+	font-size: 20px;
+}
+
+.inside .nets{
+	text-align: center;
+	line-height: 100px;
+}
+	
+.inside .nets a{
+	text-decoration:none;
+}
