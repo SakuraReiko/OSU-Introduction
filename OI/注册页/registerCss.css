@@ -1,0 +1,78 @@
+/*注册页面样式*/
+html{
+	height: 100%;
+}
+
+body{
+	height: 100%;
+}
+
+.whole{
+	height: 100%;
+	/*向右的渐变颜色*/
+	background-image: linear-gradient(to right,black,lightblue);
+}
+
+.outside{
+	width: 1500px;
+	height: 720px;
+	background-repeat: no-repeat;
+	background-image: url("../图片/注册页图片/莫妮卡.png");
+	position: relative;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	border: 2px solid #B4B4B4;
+	border-radius: 50px;
+	padding: 0 20px;
+}
+
+.betweenside{
+	width: 350px;
+	height: 720px;
+	background-repeat: no-repeat;
+	background-image: url("../图片/注册页图片/导航莫妮卡.png");
+	position: relative;
+	top: -50%;
+	right: -135%;
+	transform: translate(-50%,-50%);
+	padding: 0 20px;
+}
+
+.betweenside .tips{
+	padding-top: 100px;
+	padding-left: 55px;
+}
+
+.betweenside .tips a{
+	text-decoration: none;
+}
+
+.inside{
+	width: 720px;
+	height: 720px;
+	position: relative;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	padding: 0 20px;
+}
+
+.text{
+	border: 2px solid #B4B4B4;
+	border-radius: 30px;
+}
+
+.button{
+	text-align: center;
+	letter-spacing: .05em;
+	margin-bottom: 10px;
+	background-image: linear-gradient(to right,lightblue,white);
+	width: 200px;
+	padding: 10px 0;
+	height: 40px;
+	border: 2px solid #B4B4B4;
+	border-radius: 30px;
+	margin-top: 30px;
+	font-size: 20px;
+}

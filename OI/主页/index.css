@@ -1,0 +1,167 @@
+/*布局*/
+*{	padding: 0;
+	margin: 0;
+}
+
+html{
+	height: 100%;
+}
+
+body{
+	height: 100%;
+}
+
+.whole{
+	height: 100%;
+	/*向右的渐变颜色*/
+	background-image: linear-gradient(to right,black,grey);
+}
+
+.cover1{
+	width: 1920px;
+	height: 1080px;
+	background-image: linear-gradient(to right,black,grey);
+	position: relative;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	padding: 0 20px;
+}
+
+.cover2{
+	width: 1000px;
+	height: 900px;
+	position: relative;
+	left: 50%;
+	top: 28%;
+	transform: translate(-50%,-50%);
+	border-radius: 10px;
+	border: 2px solid #B4B4B4;
+	padding: 0 20px;
+}
+
+.logo{
+	width: 250px;
+	height: 250px;
+	position: relative;
+	left: 10%;
+	top: 25%;
+	transform: translate(-50%,-50%);
+	padding: 0 20px;
+}
+
+.type{
+	color: hotpink;
+	font-size: 25px;
+	float: left;
+	padding: 0 20px;
+	display: inline;
+}
+
+.type a{
+	color: hotpink;
+	text-decoration: none;
+}
+
+.type2{
+	color: hotpink;
+	font-size: 25px;
+	float: right;
+	display: inline;
+}
+
+.type2 a{
+	color: hotpink;
+	text-decoration: none;
+}
+
+.type3{
+	color: hotpink;
+	font-size: 25px;
+	float: left;
+	padding: 0 116px;
+	display: inline;
+}
+
+.type3 a{
+	color: hotpink;
+	text-decoration: none;
+}
+
+
+.duiqi{
+	float: left;
+}
+
+.part1{
+	color: hotpink;
+	width: 1000px;
+	height: 40px;
+	position: relative;
+	left: 50%;
+	top: 4%;
+	transform: translate(-50%,-50%);
+	padding: 0 20px;
+}
+
+.part2{
+	width: 1000px;
+	height: 340px;
+	background-image: linear-gradient(to right,#1A2731,#2D3334);
+	position: relative;
+	left: 50%;
+	top: 21%;
+	transform: translate(-50%,-50%);
+	border: 2px solid #B4B4B4;
+}
+
+.part3{
+	color: hotpink;
+	width: 1000px;
+	height: 40px;
+	position: relative;
+	left: 50%;
+	top: 2%;
+	transform: translate(-50%,-50%);
+	padding: 0 20px;
+}
+
+.part4{
+	width: 1000px;
+	height: 200px;
+	position: relative;
+	left: 50%;
+	top: 15%;
+	transform: translate(-50%,-50%);
+	border: 2px solid #B4B4B4;
+}
+
+.part5{
+	color: hotpink;
+	width: 1000px;
+	height: 40px;
+	position: relative;
+	left: 50%;
+	top: 7%;
+	transform: translate(-50%,-50%);
+	padding: 0 20px;
+}
+
+.part6{
+	width: 1000px;
+	height: 180px;
+	position: relative;
+	left: 50%;
+	top: 15%;
+	transform: translate(-50%,-50%);
+	border: 2px solid #B4B4B4;
+}
+
+.footer{
+	width: 1000px;
+	height: 20px;
+	position: relative;
+	left: 50%;
+	top: -12%;
+	transform: translate(-50%,-50%);
+}

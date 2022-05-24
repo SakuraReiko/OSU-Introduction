@@ -1,0 +1,64 @@
+*{	padding: 0;
+	margin: 0;
+}
+
+html{
+	height: 100%;
+}
+
+body{
+	height: 100%;
+}
+
+.whole{
+	height: 100%;
+	/*向右的渐变颜色*/
+	background-image: linear-gradient(to right,black,grey);
+}
+
+.cover1{
+	width: 1920px;
+	height: 1080px;
+	background-image: linear-gradient(to right,black,grey);
+	position: relative;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	padding: 0 20px;
+}
+
+.cover2{
+	width: 1000px;
+	height: 700px;
+	position: relative;
+	left: 50%;
+	top: 28%;
+	transform: translate(-50%,-50%);
+	border-radius: 10px;
+	border: 2px solid #B4B4B4;
+	padding: 0 20px;
+}
+
+.kanban{
+	width: 250px;
+	height: 250px;
+	position: relative;
+	left: 10%;
+	top: 25%;
+	transform: translate(-50%,-50%);
+	padding: 0 20px;
+}
+
+.type{
+	color: white;
+}
+
+.type1{
+	color: hotpink;
+}
+
+.type1 a{
+	text-decoration: none;
+	color: aqua;
+}
+

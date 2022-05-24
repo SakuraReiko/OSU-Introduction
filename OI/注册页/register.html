@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="registerCss.css"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>注册</title>
+<script src="register.js"></script>
+</head>
+
+<body>
+<div class="whole">
+	<div class="outside">
+		<div class="inside">
+		  <form action="mailto:ivan@qq.com?subject=注册信息" method="post" name="myForm" id="Myform" onsubmit="return registerfun();">
+				<table width="720" height="720" align="center" bordercolor="#E0E0E0" background="../图片/注册页图片/表单背景.png" class="text">
+					<tr>
+						<td colspan="3" align="center" ><strong style="font-size: 25px">账户注册</strong></td>
+					</tr>
+					<tr>
+						<td colspan="3"><strong style="font-size: 20px">必填</strong></td>
+					</tr>
+					<tr>
+						<td><label for="Myname" style="">*用户名</label></td>
+						<td colspan="2"><input type="text" name="myName" id="Myname" class="text"></td>
+					</tr>
+					<tr>
+						<td><span style="">*密码</span></td>
+						<td colspan="2"><input type="password" name="myPassword1" id="Mypassword1" class="text"></td>
+					</tr>
+					<tr>
+						<td><span style="">*确认密码</span></td>
+						<td colspan="2"><input type="password" name="myPassword2" id="Mypassword2" class="text"></td>
+					</tr>
+					<tr>
+						<td><span style="">*Email</span></td>
+						<td colspan="2">
+							<input type="email" name="myEmail" id="Myemail" class="text">
+							<br><span style="">请确保邮箱有效，我们将会发送激活链接到这个地址</span>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="3"><strong style="font-size: 20px">选填</strong></td>
+					</tr>
+					<tr>
+						<td><span style="">性别</span></td>
+						<td colspan="2">
+							<input type="radio" name="Mysex" value="M">男
+							<input type="radio" name="Mysex" value="F">女
+							<input type="radio" name="Mysex" value="N">保密
+						</td>
+					</tr>
+					<tr>
+						<td><span style="">生日</span></td>
+						<td colspan="2"><input type="date" name="myBirthday" id="Mybirthday" class="text"></td>
+					</tr>
+					<tr>
+						<td><label for="Mydevice" style="">设备</label></td>
+						<td colspan="2"><input type="text" name="myDevice" id="Mydevice" class="text"></td>
+					</tr>
+					<tr>
+						<td><label for="Mycontact" style="">联系方式</label></td>
+						<td colspan="2"><input type="text" name="myContact" id="Mycontact" class="text"></td>
+					</tr>
+					<tr>
+						<td><label for="Myarea" style="">所在地区</label></td>
+						<td colspan="2"><input type="text" name="myArea" id="Myarea" class="text"></td>
+					</tr>
+					<tr>
+						<td colspan="3"><strong style="font-size: 20px">主页展示</strong></td>
+					</tr>
+					<tr>
+						<td><span style="" >最好成绩展示</span></td>
+						<td colspan="2"><select name="Grade" size="1" class="text">
+							<option value="G1">10</option>
+							<option value="G2">20</option>
+							<option value="G3">30</option>
+							<option value="G4">40</option>
+							<option value="G5" selected="selected">50</option>
+							<option value="G6">60</option>
+							<option value="G5">70</option>
+							<option value="G6">80</option>
+							<option value="G5">90</option>
+							<option value="G6">100</option>
+						</select></td>
+					</tr>
+					<tr>
+						<td><span style="">成就</span></td>
+						<td colspan="2"><select name="Achievement" size="1" class="text">
+							<option value="A1">5</option>
+							<option value="A2" selected="selected">10</option>
+							<option value="A3">15</option>
+							<option value="A4">20</option>
+							<option value="A5">25</option>
+							<option value="A6">30</option>
+						</select></td>
+					</tr>
+					<tr>
+						<td><span style="">玩得最多的谱面</span></td>
+						<td colspan="2"><select name="Map" size="1" class="text">
+							<option value="M1">4</option>
+							<option value="M2" selected="selected">6</option>
+							<option value="M3">8</option>
+							<option value="M4">10</option>
+							<option value="M5">12</option>
+							<option value="M6">14</option>
+						</select></td>
+					</tr>
+					<tr>
+						<td><span style="">时间格式</span></td>
+						<td colspan="2">
+							<input type="radio" name="Datestyle" value="same" checked="checked">默认
+							<input type="radio" name="Datestyle" value="12style">12小时
+							<input type="radio" name="Datestyle" value="24style">24小时
+						</td>
+					</tr>
+						<tr>
+						<td><span style="">查看权限</span></td>
+						<td colspan="2">
+							<input type="radio" name="Authority" value="yourself">仅自己可见
+							<input type="radio" name="Authority" value="friend">好友可见
+							<input type="radio" name="Authority" value="everyone" checked="checked">陌生人可见
+						</td>
+					</tr>
+					<tr>
+						<td><span style="">个人签名</span></td>
+						<td colspan="2"><textarea name="Yours" class="text"></textarea></td>
+					</tr>
+					<tr>
+						<td colspan="3" align="center">
+							<input type="submit" class="button" value="确认">
+							<br><footer><p style="color: #6C5656">@ppy powered 2007-2020</p></footer>
+						</td>
+					</tr>
+				</table>
+			</form>
+			<div class="betweenside">
+				<p class="tips">
+					<span style="color: blueviolet" >FAQ❤</span>
+					<br><a style="color: #AA2426" href="../主页/index.html">返回主页❤</a>
+					<br><a style="color: #D02881" href="../登录页/Login.html">已有账号❤</a>
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
